@@ -15,7 +15,7 @@
     "prebuild": "yarn clean",
     "build": "tsc",
     "build:watch": "yarn build --watch",
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "postpublish": "yarn clean",
     "test": "jest",
     "test:watch": "jest --watch --verbose",
@@ -24,6 +24,11 @@
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/register": "^7.10.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
