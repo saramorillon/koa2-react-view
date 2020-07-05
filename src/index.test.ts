@@ -1,5 +1,5 @@
 import { Context } from 'koa'
-import { render } from '.'
+import render from '.'
 import { toJestMock } from '../mocks/toJestMock'
 import { reactRender } from './render/reactRender'
 
